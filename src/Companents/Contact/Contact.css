@@ -1,0 +1,136 @@
+.contact {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    background-color: rgba(255, 192, 203, 0.283);
+    gap: 60px;
+}
+
+.contact_logo {
+    width: 350px;
+}
+
+.icons {
+    font-size: 22px;
+    color: #c05d0d;
+    display: flex;
+    gap: 20px;
+}
+
+.contact_logo>p {
+    word-spacing: 4px;
+    line-height: 28px;
+    margin: 20px 0;
+    font-size: 17px;
+    color: rgb(128, 128, 128);
+    font-family: sans-serif;
+}
+
+.contact_nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 25px;
+}
+
+.contact_nav>span {
+    font-size: 25px;
+    color: grey;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.contact_nav>a {
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.contact_cake {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 25px;
+}
+
+.contact_cake>p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: gray;
+}
+
+.contact_cake>label {
+    color: grey;
+}
+
+
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    gap: 25px;
+}
+
+.contact_us>p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: gray;
+}
+
+.contact_us>span {
+    color: grey;
+}
+
+.contact_us>a {
+    color: #c05d0d;
+    font-size: 25px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.fa-instagram,
+.fa-square-facebook,
+.fa-linkedin,
+.fa-square-twitter {
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-instagram:hover {
+    bottom: 7px;
+}
+
+.fa-linkedin:hover {
+    bottom: 7px;
+}
+
+.fa-square-facebook:hover {
+    bottom: 7px;
+}
+
+.fa-square-twitter:hover {
+    bottom: 7px;
+}
+
+@media only screen and (max-width:980px) {
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .contact_us,
+    .contact_nav,
+    .contact_logo,
+    .contact_cake {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
