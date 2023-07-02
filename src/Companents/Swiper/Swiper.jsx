@@ -22,16 +22,17 @@ export default function Swiper() {
                 <i>Our Exclusive Cake</i>
             </div>
             <div className="swiper_content">
-                <div style={{ transform: `translateX(${365 * -count}px)` }} className="swiper_slide" id="swiper_slide">
-                    {
+                   <div style={{ transform: `translateX(${365 * -count}px)` }} className="swiper_slide">
+                   {
                         praducts.map(i =>
                             <Items key={i.id} img={i.img} title={i.title} description={i.description} />
                         )
                     }
-                </div>
+                   </div>
+                
             </div>
             <button onClick={() => count > 0 && setCount(count - 1)} className="btn_left" id="btn_left"><i className="fa-solid fa-chevron-left"></i></button>
-            <button onClick={() => count < praducts.length - 3 && setCount(count + 1)} className="btn_rigth" id="btn_rigth"><i className="fa-solid fa-chevron-right"></i></button>
+            <button onClick={() => count < praducts.length - 4 && setCount(count + 1)} className="btn_rigth" id="btn_rigth"><i className="fa-solid fa-chevron-right"></i></button>
         </main >
 
     )

@@ -35,7 +35,7 @@
 .swiper_content {
     display: flex;
     overflow: hidden;
-    width: 1082px;
+    width: 930px;
 }
 
 
@@ -43,7 +43,7 @@
     display: flex;
     gap: 15px;
     transition: 0.4s ease all;
-    transform: translateX(-365px);
+    width: 1080px;
 
 }
 
@@ -74,7 +74,7 @@
 }
 @media only screen and (max-width:1000px){
     .swiper_content{
-        width: 720px;
+        width: 700px;
     }
     .btn_left{
         left: 2px;

@@ -8,9 +8,12 @@ import About from "../../../Swiper/Swiper";
 export default function Home() {
     return (
         <>
-            <Pracuct />
+
             <Swiper />
             <About />
+            <Pracuct />
+
+
         </>
     )
 }

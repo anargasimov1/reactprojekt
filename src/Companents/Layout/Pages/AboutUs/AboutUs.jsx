@@ -1,7 +1,14 @@
-import React from 'react'
+import AboutFooter from "./AboutFooter/AboutFooter";
+import AboutMain from "./AboutMain/AboutMain";
+import AboutSection from "./AboutSection/AboutSection";
 
 export default function AboutUs() {
   return (
-    <div>AboutUs</div>
+    <>
+      <AboutSection />
+      <AboutMain />
+      <AboutFooter />
+
+    </>
   )
 }
