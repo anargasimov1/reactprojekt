@@ -15,8 +15,8 @@ export default function Praduct() {
           </h3>
           <button className="section_button" type="button">Explore Menu</button>
         </div>
-        <img className="section_img_rigth" src="./src/images/hero-shape.png (1).webp" alt="cake" />
-        <img className="section_img_left" src="./src/images/about.png.webp" alt="cake" />
+        <img className="section_img_rigth" src="https://anargasimov1.github.io/projekt/src/images/hero-shape.png%20(1).webp" alt="cake" />
+        <img className="section_img_left" src="https://anargasimov1.github.io/projekt/src/images/about.png.webp" alt="cake" />
       </section>
 
     </>

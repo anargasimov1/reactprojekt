@@ -6,7 +6,7 @@ export default function About() {
 
             <div className="about">
                 <div className="about_img">
-                    <img src="./src/images/about.png.webp" alt="about" />
+                    <img src="https://anargasimov1.github.io/projekt/src/images/about.png.webp" alt="about" />
                 </div>
                 <div className="about_title">
                     <p className="about_head">Fresh & Delicious</p>
@@ -28,30 +28,29 @@ export default function About() {
                 </div>
                 <div className="cards">
                     <div className="card">
-                        <img src="./src/images/icon1.svg" alt="icon" />
+                        <img src="https://anargasimov1.github.io/projekt/src/images/icon1.svg" alt="icon" />
                         <p>Pet Boarding</p>
                         <span>consectetur adipiscing elit, serfd dgo eiusmod tempor incididunt ut ore et dolore magna
                             aliqua.</span>
                     </div>
                     <div className="card">
-                        <img src="./src/images/icon1.svg" alt="icon" />
+                        <img src="https://anargasimov1.github.io/projekt/src/images/icon1.svg" alt="icon" />
                         <p>Pet Boarding</p>
                         <span>consectetur adipiscing elit, serfd dgo eiusmod tempor incididunt ut ore et dolore magna
                             aliqua.</span>
                     </div>
                     <div className="card">
-                        <img src="./src/images/icon1.svg" alt="icon" />
+                        <img src="https://anargasimov1.github.io/projekt/src/images/icon1.svg" alt="icon" />
                         <p>Pet Boarding</p>
                         <span>consectetur adipiscing elit, serfd dgo eiusmod tempor incididunt ut ore et dolore magna
                             aliqua.</span>
                     </div>
                 </div>
             </div>
-            <div class="video">
+            <div className="video">
                 <iframe width="90%" height="576" src="https://www.youtube.com/embed/c2QJ6_2j-jA" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                   
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </div>
         </>
     )

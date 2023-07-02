@@ -128,3 +128,19 @@
     align-items: center;
     margin-top: 20px;
 }
+
+@media only screen and (max-width:900px){
+    .about{
+        flex-direction: column;
+        margin-top: 30px;
+        height: auto;
+    }
+    .cards{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .feature{
+        height: auto;
+    }
+}
