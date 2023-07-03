@@ -32,11 +32,11 @@ export default function Navbar() {
             <nav className="nav_hidden">
                 <button onClick={() => setModal(!modal)} className="btn" type="button">MENU<i className="fa-solid fa-bars"></i></button>
                 <div style={modal ? { height: "200px" } : {height:"0"}} className="menu">
-                    <Link to="/">Home</Link>
-                    <Link to="/second">Product</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/bloq">Blog</Link>
-                    <Link to="/footer">Contact</Link>
+                    <Link onClick={() => setModal(!modal)} to="/">Home</Link>
+                    <Link onClick={() => setModal(!modal)} to="/second">Product</Link>
+                    <Link onClick={() => setModal(!modal)} to="/about">About</Link>
+                    <Link onClick={() => setModal(!modal)} to="/bloq">Blog</Link>
+                    <Link onClick={() => setModal(!modal)} to="/footer">Contact</Link>
                 </div>
             </nav>
 
