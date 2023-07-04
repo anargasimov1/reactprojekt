@@ -48,7 +48,7 @@
     z-index: -5;
 }
 
-#search {
+.search {
     width: 800px;
     margin-bottom: 90px;
     margin-left: 370px;
@@ -157,13 +157,13 @@
 }
 
 @media only screen and (max-width:900px){
-    #search{
+    .search{
         width: 500px;
         margin-left: 150px;
     }
 }
 @media only screen and (max-width:600px){
-    #search{
+    .search{
         width: 300px;
         margin-left: 40px;
     }

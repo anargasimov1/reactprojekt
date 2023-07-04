@@ -8,7 +8,9 @@ export default function Second(props) {
   const url = "https://hilarious-rectangular-principle.glitch.me/swiper";
 
   const [praducts, setPraducts] = useState([]);
-  const [count, setCount] = useState(0)
+  const [filter, setFilter] = useState("");
+
+  const filtered = praducts.filter(i => i.title.toLowerCase().includes(filter.toLocaleLowerCase()))
 
 
   function addwishlist(title, description, img, id) {
@@ -38,24 +40,23 @@ export default function Second(props) {
         <img className="section_img" src="https://anargasimov1.github.io/projekt/src/images/hero-shape.png%20(1).webp" alt="cake" />
       </section>
 
-      <input type="text" placeholder="search" id="search" />
+      <input onInput={e => { setFilter(e.target.value) }} className="search" type="text" placeholder="search" />
       <i className="fa-solid fa-magnifying-glass"></i>
       <div className="main">
 
-        <div className="praducts" id="praducts">
+        <div className="praducts">
           {
-            praducts.map(i =>
-              <div className="swiper_slide_item">
-                <div className="img_item"> <img src={i.img} /></div>
-                <h3>{i.title}</h3>
-                <p>{i.description}</p>
-                <button id="btn3" className="card_btn" type="button">$20 | Oreder Now</button>
-                <button
-                  ocns
-                  onClick={() => addwishlist(i.title, i.description, i.id, i.img)}
-                  type="button"><i className="fa-regular fa-heart"></i></button>
-              </div>
-            )
+            filtered.map(i =>
+                <div className="swiper_slide_item">
+                  <div className="img_item"> <img src={i.img} /></div>
+                  <h3>{i.title}</h3>
+                  <p>{i.description}</p>
+                  <button id="btn3" className="card_btn" type="button">$20 | Oreder Now</button>
+                  <button
+                    onClick={() => addwishlist(i.title, i.description, i.id, i.img)}
+                    type="button"><i className="fa-regular fa-heart"></i></button>
+                </div>
+              )
 
           }
         </div>
